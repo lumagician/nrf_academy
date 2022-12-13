@@ -7,8 +7,6 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 
-/* 1000 msec = 1 sec */
-#define SLEEP_TIME_MS   1000
 
 // define an isr for int_button
 void pin_isr(const struct device *dev, struct gpio_callback *cb, gpio_port_pins_t pins);
@@ -37,6 +35,7 @@ void main(void)
 	if (!device_is_ready(int_button.port)) {
 		return;
 	}
+	printk("all devices ready!\n");
 
 
 	// configure led pin as an output
@@ -52,7 +51,7 @@ void main(void)
 	}
 
 	// configure button2 pin as an interrupt input
-	ret = gpio_pin_interrupt_configure_dt(&int_button, GPIO_INT_EDGE_TO_ACTIVE);
+	ret = gpio_pin_interrupt_configure_dt(&int_button, GPIO_INT_EDGE_BOTH);
 	if (ret < 0) {
 		return;
 	}
@@ -69,22 +68,17 @@ void main(void)
 
 	while (1) {
 
-		// poll the state of button1 gpio
-		if (gpio_pin_get_dt(&button)) {
-			ret = gpio_pin_toggle_dt(&led);
-			if (ret < 0) {
-				return;
-			}
-
-			// wait for 50ms to debounce
-			k_msleep(50);
-		}
+		k_msleep(1000);
+		printk("looping\n");
+	
 	}
 }
 
 // isr implementation
 
 void pin_isr(const struct device *dev, struct gpio_callback *cb, gpio_port_pins_t pins) {
-	printk("isr called!\n");
+	printk("isr was called!\n");
 	gpio_pin_toggle_dt(&led);
+	printk("gpio was toggled\n");
+	return;
 }
