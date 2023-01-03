@@ -1,3 +1,4 @@
+/home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/Kconfig
 /home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/build/Kconfig/Kconfig.dts
 /home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/build/Kconfig/Kconfig.modules
 /home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/build/Kconfig/Kconfig.shield
@@ -274,7 +275,6 @@
 /home/hfl2/nordicsemi/v2.2.0/nrfxlib/nrf_security/src/drivers/nrf_oberon/Kconfig
 /home/hfl2/nordicsemi/v2.2.0/nrfxlib/openthread/Kconfig
 /home/hfl2/nordicsemi/v2.2.0/nrfxlib/zboss/Kconfig
-/home/hfl2/nordicsemi/v2.2.0/zephyr/Kconfig
 /home/hfl2/nordicsemi/v2.2.0/zephyr/Kconfig.zephyr
 /home/hfl2/nordicsemi/v2.2.0/zephyr/arch/Kconfig
 /home/hfl2/nordicsemi/v2.2.0/zephyr/arch/arm/Kconfig

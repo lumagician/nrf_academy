@@ -135,7 +135,7 @@ set_target_properties(devicetree_target PROPERTIES "DT_NODELABEL|uart0" "/soc/ua
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|reg" "1073750016;4096;")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|interrupts" "2;1;")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|disable-rx" "False")
-set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|current-speed" "115200")
+set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|current-speed" "9600")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|rx-pull-up" "False")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|cts-pull-up" "False")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|hw-flow-control" "False")

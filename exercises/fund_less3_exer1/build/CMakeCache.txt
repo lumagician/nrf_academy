@@ -298,7 +298,7 @@ DTC:FILEPATH=/home/hfl2/nordicsemi/toolchains/v2.2.0/usr/bin/dtc
 // parameter. These settings will override the settings in the
 // board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
 // dts2.overlay"
-DTC_OVERLAY_FILE:STRING=
+DTC_OVERLAY_FILE:STRING=/home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/nrf52833dk_nrf52833.overlay
 
 //Path to a program.
 GPERF:FILEPATH=/home/hfl2/nordicsemi/toolchains/v2.2.0/usr/bin/gperf

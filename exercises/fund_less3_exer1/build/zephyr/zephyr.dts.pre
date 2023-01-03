@@ -1024,4 +1024,9 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
+# 1 "/home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/nrf52833dk_nrf52833.overlay" 1
+&uart0 {
+    current-speed = <9600>;
+};
+# 0 "<command-line>" 2
 # 1 "/home/hfl2/nordicsemi/v2.2.0/zephyr/misc/empty_file.c"

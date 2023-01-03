@@ -18,4 +18,5 @@ empty_file.o: /home/hfl2/nordicsemi/v2.2.0/zephyr/misc/empty_file.c \
  /home/hfl2/nordicsemi/v2.2.0/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
  /home/hfl2/nordicsemi/v2.2.0/zephyr/dts/common/freq.h \
  /home/hfl2/nordicsemi/v2.2.0/zephyr/dts/arm/nordic/override.dtsi \
- /home/hfl2/nordicsemi/v2.2.0/zephyr/boards/arm/nrf52833dk_nrf52833/nrf52833dk_nrf52833-pinctrl.dtsi
+ /home/hfl2/nordicsemi/v2.2.0/zephyr/boards/arm/nrf52833dk_nrf52833/nrf52833dk_nrf52833-pinctrl.dtsi \
+ /home/hfl2/Developer/nrf_academy/exercises/fund_less3_exer1/nrf52833dk_nrf52833.overlay
